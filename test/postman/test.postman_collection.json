@@ -17,9 +17,11 @@
 					}
 				],
 				"url": {
-					"raw": "{{kubehost}}",
+					"raw": "http://arch.homework",
+					"protocol": "http",
 					"host": [
-						"{{kubehost}}"
+						"arch",
+						"homework"
 					]
 				}
 			},
@@ -37,9 +39,11 @@
 					}
 				],
 				"url": {
-					"raw": "{{kubehost}}/health",
+					"raw": "http://arch.homework/health",
+					"protocol": "http",
 					"host": [
-						"{{kubehost}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"health"
@@ -60,9 +64,11 @@
 					}
 				],
 				"url": {
-					"raw": "{{kubehost}}/otusapp/ilazarev",
+					"raw": "http://arch.homework/otusapp/ilazarev",
+					"protocol": "http",
 					"host": [
-						"{{kubehost}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"otusapp",
@@ -84,9 +90,11 @@
 					}
 				],
 				"url": {
-					"raw": "{{kubehost}}/otusapp/ilazarev/health",
+					"raw": "http://arch.homework/otusapp/ilazarev/health",
+					"protocol": "http",
 					"host": [
-						"{{kubehost}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"otusapp",
