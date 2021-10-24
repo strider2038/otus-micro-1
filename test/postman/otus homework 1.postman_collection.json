@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "4f1e7a30-23b2-4d71-8b2d-a50d9d061f78",
+		"name": "otus homework 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{kubehost}}",
+					"host": [
+						"{{kubehost}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/health",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{kubehost}}/health",
+					"host": [
+						"{{kubehost}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/otusapp/ilazarev",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{kubehost}}/otusapp/ilazarev",
+					"host": [
+						"{{kubehost}}"
+					],
+					"path": [
+						"otusapp",
+						"ilazarev"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/otusapp/ilazarev/health",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{kubehost}}/otusapp/ilazarev/health",
+					"host": [
+						"{{kubehost}}"
+					],
+					"path": [
+						"otusapp",
+						"ilazarev",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

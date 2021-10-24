@@ -1,0 +1,19 @@
+apiVersion: skaffold/v2beta24
+kind: Config
+metadata:
+  name: otus-micro
+build:
+  artifacts:
+    - image: strider2038/otus-micro-1
+      context: .
+      docker:
+        dockerfile: build/package/Dockerfile
+        buildArgs:
+          version: local
+deploy:
+  kubectl:
+    defaultNamespace: otus
+    manifests:
+      - deployments/deployment.yaml
+      - deployments/ingress.yaml
+      - deployments/service.yaml
