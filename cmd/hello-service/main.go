@@ -75,9 +75,10 @@ func createRouter() *http.ServeMux {
 			UserAgent          string    `json:"user_agent"`
 			Timestamp          string    `json:"timestamp"`
 		}{
-			ApplicationID: appID,
-			UserAgent:     request.UserAgent(),
-			Timestamp:     time.Now().Format(time.RFC3339),
+			ApplicationID:      appID,
+			ApplicationVersion: version,
+			UserAgent:          request.UserAgent(),
+			Timestamp:          time.Now().Format(time.RFC3339),
 		})
 
 		writer.Write(response)
