@@ -26,8 +26,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: build/package/Dockerfile
-          repository: strider2038/otus-micro-1
-          always_pull: true
-          build_args: APP_VERSION=${{ env.APP_VERSION }}
-          tags: latest
-          tag_with_ref: true
+          tags: strider2038/otus-micro-1:latest, strider2038/otus-micro-1:${{ env.APP_VERSION }}
+          pull: true
+          push: true
+          build-args: APP_VERSION=${{ env.APP_VERSION }}
