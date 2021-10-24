@@ -8,4 +8,8 @@
 kubectl apply -f deployments
 ```
 
-Тесты Postman расположены в директории `test/postman`. Для работы необходимо определить переменную окружения `kubehost`.
+Тесты Postman расположены в директории `test/postman`. Запуск тестов.
+
+```bash
+newman run ./test/postman/test.postman_collection.json
+```
